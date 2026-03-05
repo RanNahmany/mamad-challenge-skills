@@ -1,0 +1,11 @@
+{
+  "name": "presentation-builder",
+  "description": "Transform scripts into Apple-inspired HTML presentations with animations, color psychology, and lead magnet CTAs",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ran Nahmany"
+  },
+  "keywords": ["presentation", "slides", "html", "design", "animation"],
+  "category": "productivity",
+  "license": "MIT"
+}

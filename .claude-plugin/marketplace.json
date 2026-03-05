@@ -1,0 +1,48 @@
+{
+  "name": "mamad-skills",
+  "owner": {
+    "name": "Ran Nahmany"
+  },
+  "metadata": {
+    "description": "A curated collection of Claude Code skills for productivity, design, and content creation.",
+    "pluginRoot": "./skills"
+  },
+  "plugins": [
+    {
+      "name": "presentation-builder",
+      "source": "./skills/presentation-builder",
+      "description": "Transform scripts into Apple-inspired HTML presentations with animations, color psychology, and lead magnet CTAs",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["presentation", "slides", "html", "design", "animation"],
+      "category": "productivity",
+      "license": "MIT"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "./skills/ui-ux-pro-max",
+      "description": "UI/UX design intelligence with 50+ styles, 21 palettes, 50 font pairings, and 9 technology stacks",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["ui", "ux", "design", "react", "tailwind", "figma", "accessibility"],
+      "category": "design",
+      "license": "MIT"
+    },
+    {
+      "name": "writing-linkedin-posts",
+      "source": "./skills/writing-linkedin-posts",
+      "description": "Create engaging, authentic LinkedIn posts like a Top Voice",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["linkedin", "writing", "content", "social-media", "thought-leadership"],
+      "category": "writing",
+      "license": "MIT"
+    }
+  ]
+}

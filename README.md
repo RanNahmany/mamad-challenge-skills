@@ -1,63 +1,87 @@
-# Claude Skills Marketplace
+# mamad-skills — Claude Code Plugin Marketplace
 
-A curated collection of skills for Claude Code. Each skill teaches Claude a specialized workflow — drop any skill folder into `~/.claude/skills/` and it becomes immediately available.
+A curated collection of Claude Code plugins. Each plugin adds a specialized skill that Claude activates automatically for relevant tasks.
 
-## What is a Claude Skill?
+## Install via Claude Code (recommended)
 
-A skill is a folder inside `~/.claude/skills/` containing markdown files that give Claude deep, domain-specific knowledge and workflow instructions. When you trigger a skill (by asking Claude to do something in that domain), Claude reads the skill files and operates as an expert in that area.
+Add this marketplace once, then install any plugin by name:
 
-Skills are:
-- **Portable** — copy a folder, get the capability
-- **Composable** — use multiple skills in one session
-- **Updatable** — edit the markdown, Claude learns instantly
-- **Shareable** — this repo
-
-## Installation
-
-### Install a single skill
-```bash
-cp -r skills/presentation-builder ~/.claude/skills/
+```shell
+/plugin marketplace add RanNahmany/mamad-challenge-skills
 ```
 
-### Install all skills
-```bash
-cp -r skills/. ~/.claude/skills/
+Then install individual plugins:
+
+```shell
+/plugin install presentation-builder@mamad-skills
+/plugin install ui-ux-pro-max@mamad-skills
+/plugin install writing-linkedin-posts@mamad-skills
 ```
 
-## Skill Registry
+## Available Plugins
 
-| Skill | Description | Trigger |
-|-------|-------------|---------|
-| [presentation-builder](./skills/presentation-builder/) | Transform scripts into Apple-inspired HTML presentations with animations, color psychology, and lead magnet CTAs | "create a presentation", "build slides", "in the style of..." |
+| Plugin | Description | Keywords |
+|--------|-------------|----------|
+| [presentation-builder](./skills/presentation-builder/) | Transform scripts into Apple-inspired HTML presentations with animations, color psychology, and lead magnet CTAs | presentation, slides, html, design |
+| [ui-ux-pro-max](./skills/ui-ux-pro-max/) | UI/UX design intelligence with 50+ styles, 21 palettes, 50 font pairings, and 9 technology stacks | ui, ux, design, react, tailwind |
+| [writing-linkedin-posts](./skills/writing-linkedin-posts/) | Create engaging, authentic LinkedIn posts like a Top Voice | linkedin, writing, content, social-media |
 
-## Skill Structure
+## Plugin Structure
 
-Each skill follows this convention:
+Each plugin follows the Claude Code plugin convention:
 
 ```
-skill-name/
-├── skill.md           # Main entry point — trigger conditions, workflow, core rules
-├── [topic].md         # Supporting context files (as many as needed)
-└── ...
+skills/<plugin-name>/
+├── .claude-plugin/
+│   └── plugin.json     # Plugin manifest (name, version, description)
+├── SKILL.md            # Skill definition with trigger conditions and workflow
+└── ...                 # Supporting files (data, scripts, references)
 ```
 
-The `skill.md` file is the orchestrator. Supporting files hold deep reference content (style catalogs, boilerplates, examples) that would be too large to keep in one file.
+The `SKILL.md` file contains the frontmatter (`name`, `description`) and the full skill instructions Claude reads when the skill is triggered.
 
-## Contributing a Skill
+## Contributing a Plugin
 
-A well-formed skill includes:
+1. Create a folder under `skills/` with your plugin name
+2. Add `.claude-plugin/plugin.json` with `name`, `description`, `version`
+3. Add a `SKILL.md` with YAML frontmatter and skill instructions
+4. Add the plugin entry to `.claude-plugin/marketplace.json`
+5. Open a pull request
 
-1. **`skill.md`** — trigger conditions, step-by-step workflow, non-negotiable rules, and a pre-delivery checklist
-2. **Context files** — reference material Claude needs without searching externally (catalogs, templates, examples)
-3. **Specificity** — the more concrete and example-driven, the better Claude performs
+### plugin.json minimum
+
+```json
+{
+  "name": "my-plugin",
+  "description": "What it does and when it triggers",
+  "version": "1.0.0"
+}
+```
+
+### SKILL.md minimum
+
+```markdown
+---
+name: my-plugin
+description: One-line description for discovery
+---
+
+# My Plugin
+
+## When to Activate
+...
+
+## Workflow
+...
+```
 
 ### Skill Quality Standards
+
 - Trigger conditions must be unambiguous
-- Rules must be stated as constraints, not suggestions
-- Examples beat descriptions — show the input and the expected output
-- Include a checklist Claude can self-verify against before delivering
+- Rules stated as constraints, not suggestions
+- Examples beat descriptions — show input and expected output
+- Include a self-verifiable checklist before delivery
 
 ## License
 
 MIT — use, modify, and share freely.
-# mamad-challenge-skills
