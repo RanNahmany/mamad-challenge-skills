@@ -1,0 +1,10 @@
+{
+  "name": "excalidraw-diagram-generator",
+  "description": "Generate Excalidraw diagrams from natural language descriptions. Supports flowcharts, mind maps, architecture diagrams, ER diagrams, sequence diagrams, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ran Nahmany"
+  },
+  "keywords": ["excalidraw", "diagram", "flowchart", "visualization", "architecture", "mind-map", "er-diagram"],
+  "license": "MIT"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "business-analyst",
+  "description": "Product discovery and requirements analysis specialist. Conducts stakeholder interviews, market research, problem discovery, and creates product briefs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ran Nahmany"
+  },
+  "keywords": ["business-analyst", "product-discovery", "requirements", "research", "stakeholder", "product-brief"],
+  "license": "MIT"
+}

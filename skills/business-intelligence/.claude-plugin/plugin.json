@@ -1,0 +1,10 @@
+{
+  "name": "business-intelligence",
+  "description": "Expert business intelligence covering dashboard design, data visualization, reporting automation, and executive insights delivery.",
+  "version": "1.0.0",
+  "author": {
+    "name": "borghei"
+  },
+  "keywords": ["bi", "dashboards", "visualization", "reporting", "insights", "kpi", "data-analytics"],
+  "license": "MIT"
+}

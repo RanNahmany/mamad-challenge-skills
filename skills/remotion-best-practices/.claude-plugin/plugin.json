@@ -1,0 +1,10 @@
+{
+  "name": "remotion-best-practices",
+  "description": "Best practices for Remotion - Video creation in React. Covers animations, audio, captions, charts, fonts, transitions, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ran Nahmany"
+  },
+  "keywords": ["remotion", "video", "react", "animation", "composition", "motion", "rendering"],
+  "license": "MIT"
+}
