@@ -43,6 +43,54 @@
       "keywords": ["linkedin", "writing", "content", "social-media", "thought-leadership"],
       "category": "writing",
       "license": "MIT"
+    },
+    {
+      "name": "remotion-best-practices",
+      "source": "./skills/remotion-best-practices",
+      "description": "Best practices for Remotion - Video creation in React. Covers animations, audio, captions, charts, fonts, transitions, and more.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["remotion", "video", "react", "animation", "composition", "motion", "rendering"],
+      "category": "development",
+      "license": "MIT"
+    },
+    {
+      "name": "business-intelligence",
+      "source": "./skills/business-intelligence",
+      "description": "Expert business intelligence covering dashboard design, data visualization, reporting automation, and executive insights delivery.",
+      "version": "1.0.0",
+      "author": {
+        "name": "borghei"
+      },
+      "keywords": ["bi", "dashboards", "visualization", "reporting", "insights", "kpi", "data-analytics"],
+      "category": "data",
+      "license": "MIT"
+    },
+    {
+      "name": "business-analyst",
+      "source": "./skills/business-analyst",
+      "description": "Product discovery and requirements analysis specialist. Conducts stakeholder interviews, market research, problem discovery, and creates product briefs.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["business-analyst", "product-discovery", "requirements", "research", "stakeholder", "product-brief"],
+      "category": "productivity",
+      "license": "MIT"
+    },
+    {
+      "name": "excalidraw-diagram-generator",
+      "source": "./skills/excalidraw-diagram-generator",
+      "description": "Generate Excalidraw diagrams from natural language descriptions. Supports flowcharts, mind maps, architecture diagrams, ER diagrams, sequence diagrams, and more.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ran Nahmany"
+      },
+      "keywords": ["excalidraw", "diagram", "flowchart", "visualization", "architecture", "mind-map", "er-diagram"],
+      "category": "design",
+      "license": "MIT"
     }
   ]
 }
