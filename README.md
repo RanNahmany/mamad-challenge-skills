@@ -1,5 +1,7 @@
 # mamad-skills — Claude Code Plugin Marketplace
 
+[![gitcgr](https://gitcgr.com/badge/RanNahmany/mamad-challenge-skills.svg)](https://gitcgr.com/RanNahmany/mamad-challenge-skills)
+
 A curated collection of Claude Code plugins. Each plugin adds a specialized skill that Claude activates automatically for relevant tasks.
 
 ## Install via Claude Code (recommended)
